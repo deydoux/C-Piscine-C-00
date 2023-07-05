@@ -6,7 +6,7 @@
 /*   By: deydoux <deydoux@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 15:35:01 by deydoux           #+#    #+#             */
-/*   Updated: 2023/07/05 18:53:44 by deydoux          ###   ########.fr       */
+/*   Updated: 2023/07/05 20:11:15 by deydoux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nb / 10);
 		nb %= 10;
 	}
-	ft_putchar(nb + '0');
+	ft_putchar('0' + nb);
 }

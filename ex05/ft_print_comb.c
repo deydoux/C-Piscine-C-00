@@ -6,7 +6,7 @@
 /*   By: deydoux <deydoux@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 09:55:20 by deydoux           #+#    #+#             */
-/*   Updated: 2023/07/05 12:10:01 by deydoux          ###   ########.fr       */
+/*   Updated: 2023/07/05 13:59:04 by deydoux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,4 @@ void	ft_print_comb(void)
 		}
 		i1++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_comb();
-	return (0);
 }
