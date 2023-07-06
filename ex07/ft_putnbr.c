@@ -6,7 +6,7 @@
 /*   By: deydoux <deydoux@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 15:35:01 by deydoux           #+#    #+#             */
-/*   Updated: 2023/07/05 20:11:15 by deydoux          ###   ########.fr       */
+/*   Updated: 2023/07/06 14:26:45 by deydoux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,20 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	if (nb < 0)
+	if (nb == -2147483648)
+		write(1, "-2147483648", 11);
+	else
 	{
-		ft_putchar('-');
-		nb = -nb;
+		if (nb < 0)
+		{
+			ft_putchar('-');
+			nb = -nb;
+		}
+		if (nb >= 10)
+		{
+			ft_putnbr(nb / 10);
+			nb %= 10;
+		}
+		ft_putchar('0' + nb);
 	}
-	if (nb >= 10)
-	{
-		ft_putnbr(nb / 10);
-		nb %= 10;
-	}
-	ft_putchar('0' + nb);
 }
