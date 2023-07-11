@@ -6,7 +6,7 @@
 /*   By: deydoux <deydoux@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 00:05:35 by deydoux           #+#    #+#             */
-/*   Updated: 2023/07/11 08:11:14 by deydoux          ###   ########.fr       */
+/*   Updated: 2023/07/11 16:01:20 by deydoux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void	print_t(int *t, int n)
 		write(1, ", ", 2);
 }
 
-void	ft_print_comn(int n)
+void	ft_print_combn(int n)
 {
 	int	t[10];
 
