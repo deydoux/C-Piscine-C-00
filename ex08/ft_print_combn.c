@@ -6,7 +6,7 @@
 /*   By: deydoux <deydoux@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 00:05:35 by deydoux           #+#    #+#             */
-/*   Updated: 2023/07/11 01:11:10 by deydoux          ###   ########.fr       */
+/*   Updated: 2023/07/11 08:11:14 by deydoux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	init_t(int *t, int n)
 void	increment_t(int *t, int n, int i)
 {
 	if (t[i] == 10 - (n - i))
-		increment_t(t, n, i -1);
+		increment_t(t, n, i - 1);
 	else
 		t[i]++;
 	while (++i < n)
